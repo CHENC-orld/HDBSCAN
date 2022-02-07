@@ -26,7 +26,7 @@ function [dCore,D,kdtree] = compute_core_distances( X,k )
 
     [n,m] = size( X );
     
-    if k == 1
+    if k == 1  %%第1近，就是自己，距离为0
         dCore = zeros( 1,n );
         D = nan;
         return
